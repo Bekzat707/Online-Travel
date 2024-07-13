@@ -1,0 +1,294 @@
+/* styles.css */
+/* Общие стили */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color:   #faf8f8;
+}
+
+/* Навигационное меню */
+.navbar {
+    background-color: #343a40;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ff9800;
+}
+
+/* Главная секция */
+.home-section {
+    padding: 100px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x800'); /* Замените ссылку на реальную картинку */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden; /* Предотвращает появление прокрутки для видео */
+}
+
+.home-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.home-section p {
+    font-size: 1.8rem;
+    max-width: 500px;
+    margin: 20px auto 40px;
+}
+
+.home-section .btn-primary {
+    background-color: #ff9800;
+    border-color: #ff9800;
+}
+
+.home-section .btn-primary:hover {
+    background-color: #343a40;
+    border-color: #343a40;
+}
+
+/* Видео контейнер */
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* Соотношение сторон 16:9 (рекомендуемое для видео) */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Подвал */
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin-bottom: 0;
+}
+
+/* Дополнительные стили для страницы About */
+.about-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-section:hover {
+    transform: scale(1.05);
+}
+
+.about-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #343a40;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.about-section p {
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.about-section .btn {
+    padding: 12px 24px;
+    background-color: #ff9800;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.about-section .btn:hover {
+    background-color: #343a40;
+    transform: translateY(-5px);
+}
+
+/* Необычное цветовое решение */
+.colorful-section {
+    background: linear-gradient(135deg, #1f5bc2, #7c689c, #897638);
+    background-size: 600% 600%;
+    animation: gradientBG 20s ease infinite;
+    padding: 40px 0;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.colorful-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.colorful-section p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+}
+
+.classic-section {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.classic-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, #f8b500, #ffdf00);
+    opacity: 0.8;
+    z-index: -1;
+    border-radius: 10px;
+}
+
+.classic-section .container {
+    position: relative;
+    z-index: 1;
+}
+
+.feature {
+    margin-top: 40px;
+    text-align: left;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+}
+
+.feature h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #343a40;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.feature p {
+    font-size: 1.2rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Стили для страницы Contact */
+.contact-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.contact-section:hover {
+    transform: scale(1.05);
+}
+
+.contact-section h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #343a40;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.contact-section p {
+    font-size: 1.4rem;
+    color: #666;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    height: 150px;
+}
+
+.contact-form input[type="submit"] {
+    padding: 12px 24px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #343a40;
+}
