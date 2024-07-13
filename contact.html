@@ -1,0 +1,104 @@
+<!-- contact.html -->
+
+<style>
+    /* Дополнительные стили для страницы Contact */
+    .contact-section {
+        padding: 60px 0;
+        background-color: #f8f9fa;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin: 20px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .contact-section:hover {
+        transform: scale(1.05);
+    }
+
+    .contact-section h2 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #343a40;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+
+    .contact-section p {
+        font-size: 1.4rem;
+        color: #666;
+        line-height: 1.8;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .contact-form {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-form label {
+        font-size: 1.2rem;
+        color: #333;
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .contact-form textarea {
+        height: 150px;
+    }
+
+    .contact-form input[type="submit"] {
+        padding: 12px 24px;
+        background-color: #ff9800;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .contact-form input[type="submit"]:hover {
+        background-color: #343a40;
+    }
+</style>
+
+<section class="contact-section">
+    <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have a question or feedback? Feel free to get in touch with us!</p>
+
+        <div class="contact-form">
+            <form action="#" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <input type="submit" value="Send Message">
+            </form>
+        </div>
+    </div>
+</section>
+
